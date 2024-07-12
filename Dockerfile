@@ -1,4 +1,4 @@
-FROM bitnami/php-fpm:8.3
+FROM bitnami/php-fpm:7.4
 RUN apt-get update && apt-get install -y sendmail ffmpeg git libmagickwand-dev build-essential --no-install-recommends
 RUN pecl install imagick
 RUN echo 'extension=imagick.so' > /opt/bitnami/php/etc/php.ini
